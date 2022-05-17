@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: blue">Entregable de Miotto y Arcenilla</h1>
+    <h3> Fecha: {{hoy}} </h3>
+    <h3>LISTADO DE FAMILIARES</h3>
+    
+    <table  cellspacing="2" cellpadding="2" border="1" >
+        <tr>
+            <th scope="col"><strong>Nombre</strong></th>
+            <th scope="col"><strong>Apellido</strong></th>
+            <th scope="col"><strong>Fecha de Nacimiento</strong></th>
+            <th scope="col"><strong>color_de_ojos</strong></th>
+            <th scope="col"><strong>altura</strong></th>
+            <th scope="col"><strong>ocupacion</strong></th>
+          </tr>
+         
+        {% for persona in familiares %}
+          <tr>
+                <td>{{persona.nombre}}</td>
+                <td>{{persona.apellido}}</td>
+                <td>{{persona.fecha_nacimiento}}</td>
+                <td>{{persona.color_de_ojos}}</td>
+                <td>{{persona.altura}}</td>
+                <td>{{persona.ocupacion}}</td>
+            </tr>
+         {% endfor %}
+
+         
+    </table>
+
+    
+</body>
+</html>
