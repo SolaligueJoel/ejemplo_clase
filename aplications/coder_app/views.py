@@ -73,3 +73,6 @@ def buscar(request):
     else:
         respuesta = 'Datos invalidos'
     return HttpResponse(respuesta)
+
+def ejemplo(request):
+    pass
